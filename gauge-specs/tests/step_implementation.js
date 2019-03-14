@@ -28,3 +28,10 @@ step("GraphQL api returns <UserData> for user with <UserId>", async function (us
 
     assert.deepEqual(expectedData, actualData);
 });
+
+step("GraphQL api returns <jsonData> for query <query>", async function(jsonData, query) {
+	let expectedData = JSON.parse(jsonData);
+    let actualData = await client.request(query, null);
+
+    assert.deepEqual(expectedData, actualData, `Actual data => ${JSON.stringify(actualData)} should be equal to expected data => ${jsonData}`);
+});

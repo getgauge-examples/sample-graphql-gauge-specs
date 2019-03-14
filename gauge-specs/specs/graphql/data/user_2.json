@@ -1,0 +1,1 @@
+{"user":{"id":2,"name":"Foo 2","age":42,"orders":[{"id":2,"date":"10-02-2018","totalPrice":1800,"items":[{"id":3,"price":1000,"description":"A super fancy key board."},{"id":4,"price":800,"description":"A super fancy mouse."}]}]}}
